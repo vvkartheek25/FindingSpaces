@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class BuyerBackend(models.Model):
+    buyer_id = models.IntegerField()
+    sq_ft = models.IntegerField()
+    price = models.IntegerField()
